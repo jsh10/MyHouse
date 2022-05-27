@@ -16,5 +16,9 @@ Route::get('/', function(){
     return view('index');
 });
 
+/*   
+Example
+*/
+
 Route::get('/tienda', [CartController::class, 'shop'])->name('shop');
 
