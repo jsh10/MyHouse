@@ -87,7 +87,10 @@ class CartController extends Controller
         return redirect()->route('cart.index')->with('success_msg', 'Se han borrado los items');
     }
 
-
+    public function venta(){
+        \Cart::clear();
+         return redirect()->route('cart.index')->with('success_msg', 'Su compra se a realizado correctamente');
+        }
  
 
 

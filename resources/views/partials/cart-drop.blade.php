@@ -43,9 +43,9 @@
             CARRITO <i class="fa fa-arrow-right"></i>
         </a>
 
-        <a class="btn btn-success btn-sm btn-success" href="">
+        <!--<a class="btn btn-success btn-sm btn-success" href="">
             CHECKOUT <i class="fa fa-arrow-right"></i>
-        </a>
+        </a>-->
     </div>
 
 @else
