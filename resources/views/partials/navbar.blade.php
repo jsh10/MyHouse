@@ -60,7 +60,6 @@
                         </li>
                     </div>
 
-                    <a href="{{url('/')}}" class="nav-item nav-link">Contactenos</a>
                     <a href="{{url('contacto')}}" class="nav-item nav-link">Contactenos</a>
 
                 </div>

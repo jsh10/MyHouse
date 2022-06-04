@@ -112,19 +112,22 @@
                     @if(count($cartCollection)>0)
                     <form action="{{ route('venta') }}" method="POST">
                         <div class="contenedor-inputs">
-                            <input type="text" class="form-control" placeholder="Ingrese su nombre">
+                            <input type="text" class="form-control" placeholder="Ingrese su nombre" name="nombre" id="nombre"
+                              pattern="[a-zA-Z áéíóúÁÉÍÓÚ]{2,85}" onchange="toggleButton()"
+                              title="No se puede utilizar numeros o caracteres como #/*-+"> 
                             <div class="row">
                                 <div class="col-md-6">
-                                    <input type="email" class="form-control" placeholder="myHouse@gmail.com">
+                                    <input type="email" class="form-control" placeholder="myHouse@gmail.com" name="correo" id="correo" onchange="toggleButton()">
                                 </div>
                                 <div class="col-md-6">
-                                <input type="tel" class="form-control" placeholder="(+503) 4879-4659">
+                                <input type="tel" class="form-control" placeholder="503 1234-5678" name="telefono" id="telefono"
+                                 pattern="[0-9]{0,3} [0-9]{4}-[0-9]{4}" onchange="toggleButton()" title="Ejemplo: 503 1234-5678">
                                 </div>
                             </div>
-                            <input type="text" placeholder="${{ \Cart::getTotal() }}" disabled style="background-color: white;">
+                            <input type="text" placeholder="Total a pagar ${{ \Cart::getTotal() }}" disabled style="background-color: white;">
                         </div>
                         {{ csrf_field() }}
-                        <input type="submit" class="w-100 btn btn-submit" value="Comprar">
+                        <input type="submit" id="checkButton" class="w-100 btn btn-submit" style="border-radius: 50px;" value="Comprar" disabled>
                     </form>
                     @endif
                 </div>
@@ -135,7 +138,20 @@
     <br><br>
 </div>
 
-
+<script>        
+    function toggleButton()
+        {            
+            var nombre = document.getElementById('nombre').value;
+            var correo = document.getElementById('correo').value;
+            var telefono = document.getElementById('telefono').value;
+ 
+            if (nombre && correo && telefono) {
+                document.getElementById('checkButton').disabled = false;
+            } else {
+                document.getElementById('checkButton').disabled = true;
+            }
+    }
+</script>
 <!-- Librerias JavaScript -->
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>

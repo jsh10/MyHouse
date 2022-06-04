@@ -41,7 +41,7 @@
         <div class="row gx-0">
             <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center" style="height: 45px;">
-                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>smis935820@ugb.edu.sv</small>
+                    <small class="text-light"><i class="fa fa-envelope-open me-2"></i>MyHouse@gmail.com</small>
                 </div>
             </div>
             <div class="col-lg-4 text-center text-lg-end">

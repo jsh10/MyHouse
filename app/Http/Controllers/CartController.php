@@ -89,9 +89,8 @@ class CartController extends Controller
 
     public function venta(){
         \Cart::clear();
-         return redirect()->route('cart.index')->with('success_msg', 'Su compra se a realizado correctamente');
-        }
- 
+        return view('/envio2');
+    }
 
 
 }

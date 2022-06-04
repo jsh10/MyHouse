@@ -16,6 +16,7 @@ Route::get('/', function(){
     return view('index');
 });
 
+Route::get('/tienda', [CartController::class, 'shop'])->name('shop');
 
 Route::get('/cart', [CartController::class, 'cart'])->name('cart.index');
 
@@ -31,9 +32,12 @@ Route::get('/contacto', function(){
     return view('contacto');
 });
 
-
-Route::get('/tienda', [CartController::class, 'shop'])->name('shop');
-
 Route::post('/venta', [CartController::class, 'venta'])->name('venta');
 
+Route::get('/envio1', function(){
+    return view('envio1');
+});
 
+Route::get('/envio2', function(){
+    return view('envio2');
+});

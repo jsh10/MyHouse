@@ -42,10 +42,6 @@
         <a class="btn btn-dark btn-sm btn-block" style="margin-bottom: 8px;" href="{{ route('cart.index') }}">
             CARRITO <i class="fa fa-arrow-right"></i>
         </a>
-
-        <!--<a class="btn btn-success btn-sm btn-success" href="">
-            CHECKOUT <i class="fa fa-arrow-right"></i>
-        </a>-->
     </div>
 
 @else

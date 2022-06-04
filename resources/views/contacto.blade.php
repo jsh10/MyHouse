@@ -54,26 +54,30 @@
             </div>
             <div class="row g-5">
                 <div class="col-lg-6 wow slideInUp card" data-wow-delay="0.3s">
-                    <form>
+                <form action="{{url('/envio1')}}" method="GET">
                         <div class="row g-3" style="margin-top: 10px; margin-bottom:10px;">
                             <div class="col-md-6">
                                 <label>Nombre completo:</label>
-                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="" style="height: 55px;">
+                                <input type="text" class="form-control border-0 bg-light px-4" id="nombre" pattern="[a-zA-Z áéíóúÁÉÍÓÚ]{2,85}" onchange="toggleButton()"
+                                placeholder="mynombre" title="No se puede utilizar numeros o caracteres como #/*-+" style="height: 55px;">
                             </div>
                             <div class="col-md-6">
                                 <label>Correo electronico:</label>
-                                <input type="email" class="form-control border-0 bg-light px-4" placeholder="" style="height: 55px;">
+                                <input type="email" class="form-control border-0 bg-light px-4" id="email" placeholder="myHouse@gmail.com" 
+                                onchange="toggleButton()" style="height: 55px;">
                             </div>
                             <div class="col-12">
                             <label>Asunto del mensaje:</label>
-                                <input type="text" class="form-control border-0 bg-light px-4" placeholder="" style="height: 55px;">
+                                <input type="text" class="form-control border-0 bg-light px-4" id="asunto" pattern="[a-zA-Z áéíóúÁÉÍÓÚ1-9]{2,85}" 
+                                onchange="toggleButton()" style="height: 55px;">
                             </div>
                             <div class="col-12">
                                 <label>Mensaje:</label>
-                                <textarea class="form-control border-0 bg-light px-4 py-0" rows="4" placeholder=""></textarea>
+                                <textarea class="form-control border-0 bg-light px-4 py-0" rows="4" id="mensaje" 
+                                pattern="[a-zA-Z áéíóúÁÉÍÓÚ1-9]{2,255}" onchange="toggleButton()"></textarea>
                             </div>
                             <div class="col-12">
-                                <button class="btn btn-primary w-100" style="border-radius:50px; margin-bottom:10px;" type="submit">Enviar mensaje</button>
+                                <button class="btn btn-primary w-100" id="checkButton" style="border-radius:50px; margin-bottom:10px; color:#fff;" type="submit" disabled>Enviar mensaje</button>
                             </div>
                         </div>
                     </form>
@@ -90,6 +94,23 @@
     </div>
     <!-- Contact End -->
 </div>
+
+<script>
+    function toggleButton()
+        {            
+            var nombre = document.getElementById('nombre').value;
+            var correo = document.getElementById('email').value;
+            var asunto = document.getElementById('asunto').value;
+            var mensaje = document.getElementById('mensaje').value;
+ 
+            if (nombre && correo && asunto && mensaje) {
+                document.getElementById('checkButton').disabled = false;
+            } else {
+                document.getElementById('checkButton').disabled = true;
+            }
+    }
+</script>
+
 @endsection
 
 @section('footer')
