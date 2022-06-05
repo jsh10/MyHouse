@@ -40,7 +40,7 @@
                         <a href="{{url('/')}}" class="navbar-brand">
                             <h1 class="m-0 text-white">¿Quienes somos?</h1>
                         </a>
-                        <p class="mt-3 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce justo metus, facilisis et libero eu, rutrum venenatis eros. Nulla non pulvinar ex. Mauris vitae erat sollicitudin, condimentum nulla nec, aliquet felis.</p>
+                        <p class="mt-3 mb-4">"Myhouse" es una empresa local Salvadoreña que vende y distribuye los mejores productos interacionales para el hogar, con la prioridad de tener los mejores precios y la más alta calidad con respecto a la competencia, en Myhouse tenemos como mayor prioridad a las familias y queremos que todos tenga el mejor y más comodo estilo de vida</p>
                         
                     </div>
                 </div>

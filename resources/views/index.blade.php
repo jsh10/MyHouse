@@ -6,20 +6,20 @@
 <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" style="height: 50%;">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="w-100" style="width: 50%;" src="img/5.jpg" alt="Image">
+                    <img class="w-100" style="width: 50%;" src="img/playa.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h5 class="text-primary text-uppercase mb-3 animated slideInDown">MyHouse Slider #1</h5>
-                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Espacio promocional de MyHouse #1</h1>
+                            <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Grandes Ofertas de Verano</h5>
+                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Para que lo disfrutes con toda tu familia</h1>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img class="w-100" src="img/2.jpg" alt="Image">
+                    <img class="w-100" src="img/cocina1.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h5 class="text-primary text-uppercase mb-3 animated slideInDown">MyHouse Slider #2</h5>
-                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Espacio Promocional de MyHouse #2</h1>    
+                            <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Los mejores productos del Hogar</h5>
+                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">La más alta calidad al mejor precio</h1>    
                         </div>
                     </div>
                 </div>
@@ -46,19 +46,21 @@
                     <h1 class="mb-0">Nuestro compromiso contigo.</h1><br>
                     <div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
                         <p class="mb-4 text-justify" style="margin-top:0px;">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sagittis metus sed nulla porta suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. In congue diam vitae enim pharetra, ut varius dui vestibulum. Donec rutrum mi sit amet arcu
-                            varius cursus. Praesent tincidunt nisi sem. Proin ac risus tristique, sollicitudin lorem vitae, dignissim nulla. Ut non velit laoreet, placerat sem vitae, porttitor urna. Nulla tincidunt elementum augue, non laoreet metus venenatis
-                            a.
+                            En "MyHouse" estamos dedicados a distribuir los mejores productos del mercado,
+                            siempre con el mejor precio, ya que deseamos que los hogares de todas las familias
+                            sean y luzcan como las mejores, sin olvidar nuestro vínculo con nuestros clientes
+                            que son nuestra principal causa y que a ellos son a quienes nos dedicamos.
+                        
                         </p>
                     </div>
                     <div class="row g-0 mb-3">
                         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Compromiso 1</h5>
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Compromiso 2</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Mejores precios</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Increibles productos</h5>
                         </div>
                         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Compromiso 3</h5>
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Compromiso 4</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Ofertas especiales</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Siempre para ti</h5>
                         </div>
                     </div>
 
@@ -80,27 +82,27 @@
         <div class="row g-5">
             <div class="col-lg-4 col-md-6">
                 <div class="bg-primary border-inner text-center text-white p-5">
-                    <h4 class="text-uppercase mb-3 text-white">Birthday Cake</h4>
-                    <p>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo amet tempor amet kasd lorem dolor ipsum</p>
+                    <h4 class="text-uppercase mb-3 text-white">Muebles para el hogar</h4>
+                    <p>Los muebles de mejor calidad y el mejor estilo disponibles en el mercado</p>
 
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="bg-primary border-inner text-center text-white p-5">
-                    <h4 class="text-uppercase mb-3 text-white">Wedding Cake</h4>
-                    <p>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo amet tempor amet kasd lorem dolor ipsum</p>
+                    <h4 class="text-uppercase mb-3 text-white">Productos de cocina</h4>
+                    <p>Los mejores utensilios solo disponibles con nosotros, modernos y prácticos</p>
 
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="bg-primary border-inner text-center text-white p-5">
-                    <h4 class="text-uppercase mb-3 text-white">Custom Cake</h4>
-                    <p>Ipsum ipsum clita erat amet dolor sit justo sea eirmod diam stet sit justo amet tempor amet kasd lorem dolor ipsum</p>
+                    <h4 class="text-uppercase mb-3 text-white">Tecnologia</h4>
+                    <p>También estamos a la vanguardia de la tecnología, con lo más nuevo en productos electrónicos</p>
 
                 </div>
             </div>
             <div class="col-lg-12 col-md-6 text-center ">
-                <h1 class="text-uppercase text-light mb-4">30% Discount For This Summer</h1>
+                <h1 class="text-uppercase text-light mb-4">Hasta 30% de descuento este verano</h1>
             </div>
         </div>
     </div>
@@ -111,12 +113,13 @@
         <div class="row gx-5 justify-content-center">
             <div class="col-lg-7 text-center">
                 <div class="position-relative text-center mx-auto mb-4 pb-3" style="max-width: 600px;">
-                    <h2 class="text-primary font-secondary">Special Kombo Pack</h2>
-                    <h1 class="display-4 text-uppercase text-white">Super Crispy Cakes</h1>
+                    <h2 class="text-primary font-secondary">Combos Espiales de Compra</h2>
+                    <h1 class="display-4 text-uppercase text-white">Más descuentos por seguir con nosotros</h1>
                 </div>
-                <p class="text-white mb-4">Eirmod sed tempor lorem ut dolores sit kasd ipsum. Dolor ea et dolore et at sea ea at dolor justo ipsum duo rebum sea. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo lorem. Elitr ut dolores magna sit. Sea dolore sed et.</p>
-                <a href="" class="btn btn-primary border-inner py-3 px-5 me-3">Shop Now</a>
-                <a href="" class="btn btn-dark border-inner py-3 px-5">Read More</a>
+                <p class="text-white mb-4">Sigue comprando y obten tus beneficios por cliente leal con increibles paquetes para tu hogar
+</p>
+                <a href="" class="btn btn-primary border-inner py-3 px-5 me-3">¡Compra Ya!</a>
+                <a href="" class="btn btn-dark border-inner py-3 px-5">Leer Más</a>
             </div>
         </div>
     </div>
@@ -131,13 +134,13 @@
         height: calc(100% - 45px);
         top: 135px;
         left: 0;
-        background: linear-gradient(rgba(187, 102, 49, 0.7), rgba(138, 65, 206, 0.6)), url(../img/header.jpg) center center no-repeat;
+        background: linear-gradient(rgba(187, 102, 49, 0.7), rgba(138, 65, 206, 0.6)), url(../img/sala1.jpg) center center no-repeat;
         background-size: cover;
         z-index: -1;
     }
     
     .bg-offer {
-        background: linear-gradient(rgba(17, 57, 117, 0.7), rgba(18, 130, 145, 0.5)), url(../img/5.jpg) center center no-repeat;
+        background: linear-gradient(rgba(17, 57, 117, 0.7), rgba(18, 130, 145, 0.5)), url(../img/sala2.jpg) center center no-repeat;
         background-size: cover;
     }
 </style>
