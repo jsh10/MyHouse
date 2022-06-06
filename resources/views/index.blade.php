@@ -9,7 +9,7 @@
                     <img class="w-100" style="width: 50%;" src="img/playa.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Grandes Ofertas de Verano</h5>
+                            <h5 class="fw-bold text-primary text-uppercase mb-3 animated slideInDown">Grandes Ofertas de Verano</h5>
                             <h1 class="display-1 text-white mb-md-4 animated zoomIn">Para que lo disfrutes con toda tu familia</h1>
                         </div>
                     </div>
@@ -18,7 +18,7 @@
                     <img class="w-100" src="img/cocina1.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h5 class="text-primary text-uppercase mb-3 animated slideInDown">Los mejores productos del Hogar</h5>
+                            <h5 class="fw-bold text-primary text-uppercase mb-3 animated slideInDown">Los mejores productos del Hogar</h5>
                             <h1 class="display-1 text-white mb-md-4 animated zoomIn">La más alta calidad al mejor precio</h1>    
                         </div>
                     </div>
@@ -107,18 +107,17 @@
         </div>
     </div>
 </div>
-
-<div class="container-fluid bg-offer my-5 py-5">
+<br>
+<div class="container-fluid bg-offer my-5 py-5 wow fadeInUp">
     <div class="container py-5">
         <div class="row gx-5 justify-content-center">
             <div class="col-lg-7 text-center">
                 <div class="position-relative text-center mx-auto mb-4 pb-3" style="max-width: 600px;">
-                    <h2 class="text-primary font-secondary">Combos Espiales de Compra</h2>
+                    <h2 class="text-primary font-secondary">Combos Especiales por tus Compra</h2>
                     <h1 class="display-4 text-uppercase text-white">Más descuentos por seguir con nosotros</h1>
                 </div>
-                <p class="text-white mb-4">Sigue comprando y obten tus beneficios por cliente leal con increibles paquetes para tu hogar
-</p>
-                <a href="" class="btn btn-primary border-inner py-3 px-5 me-3">¡Compra Ya!</a>
+                <p class="text-white mb-4">Sigue comprando con nosotros y obten los increibles beneficios como nuestro cliente leal.</p>
+                <a href="" class="btn btn-primary border-inner py-3 px-5 me-3 text-white">¡Compra Ya!</a>
                 <a href="" class="btn btn-dark border-inner py-3 px-5">Leer Más</a>
             </div>
         </div>
