@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+   background-color: rgba(213, 216, 60, 0.541);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@media(min-width:768px)
+{
+    .formulario{
+        margin: auto;
+        width: 500px;
+        margin-top: 150px;
+        border-radius: 2%;
+    }
+}
+
+h1{
+    text-align: center;
+    color: #0b49ac;
+    font-size: 40px;
+}
+p {
+    animation-duration: 6s;
+    animation-name: slidein;
+ 
+    animation-direction: alternate;
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+
+
+.polling_message {
+    color: white;
+    float: left;
+    margin-right: 2%;
+  }
+  
+  .view_port {
+    background-color: black;
+    height: 100px;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .cylon_eye {
+    background-color: red;
+    background-image: linear-gradient(to right,
+        rgba(0, 0, 0, .9) 25%,
+        rgba(0, 0, 0, .1) 50%,
+        rgba(0, 0, 0, .9) 75%);
+    color: white;
+    height: 100%;
+    width: 20%;
+  
+    -webkit-animation: 4s linear 0s infinite alternate move_eye;
+            animation: 4s linear 0s infinite alternate move_eye;
+  }
+  
+  @-webkit-keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
+  @keyframes move_eye { from { margin-left: -20%; } to { margin-left: 100%; }  }
+  

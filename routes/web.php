@@ -41,3 +41,15 @@ Route::get('/envio1', function(){
 Route::get('/envio2', function(){
     return view('envio2');
 });
+
+Route::get('/login' , function(){
+    return view('cuenta/login');
+});
+
+Route::get('/register' , function(){
+    return view('cuenta/registro');
+});
+
+Route::get('/pantalla' , function(){
+    return view('cuenta/pantalla');
+});
