@@ -61,9 +61,10 @@
                     </div>
 
                     <a href="{{url('contacto')}}" class="nav-item nav-link">Contactenos</a>
+                     <a href="{{url('/login')}}" class="nav-item nav-link">Iniciar sesión</a>
 
                 </div>
-                <a href="{{url('/login')}}" class="btn btn-primary py-2 px-4 ms-3" style="border-radius: 50px; color:white;">Iniciar sesión</a>
+               
             </div>
         </nav>
 </div>
