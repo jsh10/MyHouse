@@ -104,5 +104,114 @@ class ProductsTableSeeder extends Seeder
             'brand_id' => 5,
             'image_path' => 'gr5-2017.jpg'
         ]);
+
+        Product::create([
+            'name' => 'Set de comedor',
+            'slug' => 'stc-04',
+            'details' => 'Set de comedor exterior',
+            'price' => 145.00,
+            'shipping_cost' => 100.00,
+            'description' => 'Set de comedor exterior',
+            'category_id' => 6,
+            'brand_id' => 6,
+            'image_path' => 'set4.jpg'
+        ]);
+
+        Product::create([
+            'name' => 'Sillón Uma Turquesa',
+            'slug' => 'sstl-04',
+            'details' => 'Sillón Uma Turquesa',
+            'price' => 125.80,
+            'shipping_cost' => 90.00,
+            'description' => 'Sillón Uma Turquesa',
+            'category_id' => 7,
+            'brand_id' => 6,
+            'image_path' => 'sillon.jpg'
+        ]);
+
+        Product::create([
+            'name' => 'Lampara de techo artesanal',
+            'slug' => 'lta-078',
+            'details' => 'Lampara de techo artesanal',
+            'price' => 15.50,
+            'shipping_cost' => 8.00,
+            'description' => 'Lampara de techo artesanal',
+            'category_id' => 6,
+            'brand_id' => 8,
+            'image_path' => 'lta.jpg'
+        ]);
+
+        Product::create([
+            'name' => 'Cama Royal King',
+            'slug' => 'lta-07y',
+            'details' => 'Cama Royal King',
+            'price' => 175.99,
+            'shipping_cost' => 135.50,
+            'description' => 'Cama Royal King',
+            'category_id' => 6,
+            'brand_id' => 8,
+            'image_path' => 'crk.jpg'
+        ]);
+
+        Product::create([
+            'name' => 'Ropero W. Deluxe',
+            'slug' => 'lta-07t',
+            'details' => 'Ropero W. Deluxe',
+            'price' => 75.99,
+            'shipping_cost' => 55.12,
+            'description' => 'Ropero W. Deluxe',
+            'category_id' => 6,
+            'brand_id' => 6,
+            'image_path' => 'rwd.jpg'
+        ]);
+
+        Product::create([
+            'name' => 'Set de sartenes Atlas',
+            'slug' => 'lta-07u',
+            'details' => 'Set de sartenes Atlas',
+            'price' => 12.99,
+            'shipping_cost' => 9.25,
+            'description' => 'Set de sartenes Atlas',
+            'category_id' => 8,
+            'brand_id' => 7,
+            'image_path' => 'pal.jpg'
+        ]);
+
+        Product::create([
+            'name' => 'Cuchillos SR. Chef',
+            'slug' => 'lta-07i',
+            'details' => 'Cuchillos SR. Chef',
+            'price' => 8.57,
+            'shipping_cost' => 4.25,
+            'description' => 'Cuchillos SR. Chef',
+            'category_id' => 8,
+            'brand_id' => 7,
+            'image_path' => 'sir.jpg'
+        ]);
+
+        Product::create([
+            'name' => 'Licuadora Oster Enterprisse',
+            'slug' => 'lta-t07',
+            'details' => 'Licuadora Oster Enterprisse',
+            'price' => 95.99,
+            'shipping_cost' => 75.00,
+            'description' => 'Licuadora Oster Enterprisse',
+            'category_id' => 8,
+            'brand_id' => 7,
+            'image_path' => 'ose.jpg'
+        ]);
+
+
+        Product::create([
+            'name' => 'Hamaca de tela EconoProm',
+            'slug' => 'lta-0y7',
+            'details' => 'Hamaca de tela EconoProm',
+            'price' => 29.99,
+            'shipping_cost' => 25.15,
+            'description' => 'Hamaca de tela EconoProm',
+            'category_id' => 8,
+            'brand_id' => 7,
+            'image_path' => 'hamaca.jpg'
+        ]);
     }
 }

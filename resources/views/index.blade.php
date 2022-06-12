@@ -46,21 +46,21 @@
                     <h1 class="mb-0">Nuestro compromiso contigo.</h1><br>
                     <div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
                         <p class="mb-4 text-justify" style="margin-top:0px;">
-                            En "MyHouse" estamos dedicados a distribuir los mejores productos del mercado,
-                            siempre con el mejor precio, ya que deseamos que los hogares de todas las familias
-                            sean y luzcan como las mejores, sin olvidar nuestro vínculo con nuestros clientes
-                            que son nuestra principal causa y que a ellos son a quienes nos dedicamos.
-                        
+                            En "MyHouse" estamos dedicados a distribuir los mejores productos del mercado, siempre 
+                            con el mejor precio y una gran atención para nuestros clientes. Como empresa deseamos 
+                            que las familias salvadoreñas puedan tener un lugar en donde promocionar y obtener las 
+                            mejores ofertas del mercado, ya que el vínculo con nuestros clientes es muy importante 
+                            para nosotros, es por ello que como equipo nos comprometemos a ofrecerte: 
                         </p>
                     </div>
                     <div class="row g-0 mb-3">
                         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Mejores precios</h5>
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Increibles productos</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Mejores precios.</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Increibles productos.</h5>
                         </div>
                         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Ofertas especiales</h5>
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Siempre para ti</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Ofertas especiales.</h5>
+                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Estar siempre para tí.</h5>
                         </div>
                     </div>
 
@@ -113,12 +113,12 @@
         <div class="row gx-5 justify-content-center">
             <div class="col-lg-7 text-center">
                 <div class="position-relative text-center mx-auto mb-4 pb-3" style="max-width: 600px;">
-                    <h2 class="text-primary font-secondary">Combos Especiales por tus Compra</h2>
-                    <h1 class="display-4 text-uppercase text-white">Más descuentos por seguir con nosotros</h1>
+                    <h2 class="text-primary font-secondary">Beneficios por tus compras</h2>
+                    <h1 class="display-4 text-uppercase text-white">Sigue comprando con MyHouse</h1>
                 </div>
-                <p class="text-white mb-4">Sigue comprando con nosotros y obten los increibles beneficios como nuestro cliente leal.</p>
-                <a href="" class="btn btn-primary border-inner py-3 px-5 me-3 text-white">¡Compra Ya!</a>
-                <a href="" class="btn btn-dark border-inner py-3 px-5">Leer Más</a>
+                <p class="text-white mb-4">Compra con nosotros para recibir los increíbles descuentos y promociones que te ofrece nuestra plataforma.</p>
+                <a href="{{url('/tienda')}}" class="btn btn-primary border-inner py-3 px-5 me-3 text-white">¡Compra Ya!</a>
+                <a href="{{url('contacto')}}" class="btn btn-dark border-inner py-3 px-5">Conocer Más</a>
             </div>
         </div>
     </div>

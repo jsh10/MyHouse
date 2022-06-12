@@ -53,3 +53,9 @@ Route::get('/register' , function(){
 Route::get('/pantalla' , function(){
     return view('cuenta/pantalla');
 });
+
+Route::post('/reiniciar', [CartController::class, 'reiniciar'])->name('reiniciar');
+
+/* PDF */
+
+Route::get('/pdf', [CartController::class, 'pdf'])->name('pdf');

@@ -32,7 +32,7 @@
 
                                 <div class="card-body">
                                     <a href="#"><h6 class="card-title text-center">{{ $pro->name }}</h6></a>
-                                    <p>Precio: ${{ $pro->price }}</p>
+                                    <p class="text-center">Precio: ${{ $pro->price }}</p>
                                     <form action="{{ route('cart.store') }}" method="POST">
                                         {{ csrf_field() }}
                                         <input type="hidden" value="{{ $pro->id }}" id="id" name="id">
@@ -44,7 +44,7 @@
                                         <div class="card-footer" style="background-color: white;">
 
                                               <div class="row">
-                                                <button class="btn btn-secondary btn-sm" class="tooltip-test" title="add to cart">
+                                                <button class="btn btn-secondary btn-sm text-white" class="tooltip-test" title="add to cart">
                                                     <i class="fa fa-shopping-cart"></i>Agregar al carrito</button>
                                             </div>
                                         </div>

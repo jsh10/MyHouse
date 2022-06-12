@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Models\Product;
-
+use PDF;
 
 class CartController extends Controller
 
@@ -17,6 +17,14 @@ class CartController extends Controller
         return view('shop')-> withTitle ('E-COMMERCE STORE | SHOP')->with(['products' => $products]);
     }
 
+    public function pdf(){
+        $products = \Cart::getContent();
+        //dd($products);
+        $pdf = PDF::loadview('index2',compact('products'));
+        //$pdf->loadHTML('<h1>Test</h1>');
+        return $pdf->stream();
+        //return view('index2', compact('products'));
+        }
 
     public function cart(){
         $cartCollection = \Cart::getContent();
@@ -88,8 +96,12 @@ class CartController extends Controller
     }
 
     public function venta(){
-        \Cart::clear();
         return view('/envio2');
+    }
+
+    public function reiniciar(){
+        \Cart::clear();
+        return redirect()->route('cart.index')->with('success_msg', 'Compra realizada');
     }
 
 

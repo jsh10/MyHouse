@@ -16,7 +16,19 @@
 
     <div class="containerbet text-center">
         <h1>Su compra se realizo correctamente</h1>
-        <a href="{{url( '/tienda')}} ">Regresar a la tienda</a>
+        <div class="row py-5">
+            <div class="col-md-6">
+                <form action="{{ route('reiniciar') }}" method="POST">
+                    {{ csrf_field() }}
+                    <button class="btn btn-success btn-md w-100" style="border-radius: 50px;">Regresar a la tienda</button>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <button class="btn btn-info btn-md w-100" style="border-radius: 50px; color:white;">
+                    <a href="{{url( '/pdf')}}"  target="_blanck">Descargar detalles</a>
+                </button>
+            </div>
+        </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
@@ -51,6 +63,8 @@
     .containerbet a:hover {
         color: rgba(126, 229, 247, 0.993);
     }
+
+
 </style>
 
 </html>

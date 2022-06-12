@@ -32,7 +32,7 @@
 
 
  <!-- Footer -->
- <div class="container-fluid bg-dark text-light mt-5 wow" data-wow-delay="0.1s">
+ <div class="container-fluid bg-dark text-light mt-5" data-wow-delay="0.1s">
         <div class="container">
             <div class="row gx-5">
                 <div class="col-lg-4 col-md-6 footer-about">
@@ -40,7 +40,7 @@
                         <a href="{{url('/')}}" class="navbar-brand">
                             <h1 class="m-0 text-white">¿Quienes somos?</h1>
                         </a>
-                        <p class="mt-3 mb-4">"Myhouse" es una empresa local Salvadoreña que vende y distribuye los mejores productos interacionales para el hogar, con la prioridad de tener los mejores precios y la más alta calidad con respecto a la competencia, en Myhouse tenemos como mayor prioridad a las familias y queremos que todos tenga el mejor y más comodo estilo de vida</p>
+                        <p class="mt-3 mb-4">Somos una empresa salvadoreña que vende y distribuye los mejores productos para el hogar y las familias, teniendo como prioridad la conformidad de nuestros clientes, es por ello que ofrecemos productos de buena calidad a un precio justo.</p>
                         
                     </div>
                 </div>
@@ -48,39 +48,41 @@
                     <div class="row gx-5">
                         <div class="col-lg-1 col-md-0"></div>
                         <div class="col-lg-5 col-md-12 pt-5 mb-5">
-                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
+                            <div class="text-center section-title-sm position-relative mb-4">
                                 <h3 class="text-light mb-0">Contacto</h3>
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-geo-alt text-primary me-2"></i>
-                                <p class="mb-0">123 San Miguel, El Salvador</p>
+                                <p class="mb-0">2341 San Miguel, El Salvador</p>
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-envelope-open text-primary me-2"></i>
-                                <p class="mb-0">MyHouse@gmail.com</p>
+                                <p class="mb-0">Correo: MyHouse@gmail.com</p>
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-telephone text-primary me-2"></i>
-                                <p class="mb-0">+503 1234-5678</p>
+                                <p class="mb-0">Teléfono: +503 1234-5678</p>
                             </div>
                             <div class="d-flex mt-4">
+                                
                                 <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
                                 <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
                                 <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
                                 <a class="btn btn-primary btn-square" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                                
                             </div>
                         </div>
                         <div class="col-lg-1 col-md-0"></div>
                         <div class="col-lg-5 col-md-12 pt-0 pt-lg-5 mb-5">
-                            <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-light mb-0">Librerías utilizadas</h3>
+                            <div class="text-center section-title-sm position-relative mb-4">
+                                <h3 class="text-light mb-0">Sucursales</h3>
                             </div>
                             <div class="link-animated d-flex flex-column justify-content-start">
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Animate</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Bootstrap</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Easing</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Laravel</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Owlcarousel</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>San Miguel, San Miguel.</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>San Francisco Gotera. Morazán.</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Guatajiagua, Morazán.</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Santa Rosa de Lima, La Union.</a>
+                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>San Salvador, San Salvador</a>
                             </div>
                         </div>
                     </div>
@@ -93,7 +95,7 @@
             <div class="row justify-content-end">
                 <div class="col-lg-8 col-md-6">
                     <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
-                        <p class="mb-0">&copy; <a class="text-white" style="text-decoration: none;" href="https://www.ugb.edu.sv/" target="_blank">MyHouse || Universidad Gerardo Barrios</a> 
+                        <p class="mb-0">&copy; <a class="text-white" style="text-decoration: none;" href="https://www.ugb.edu.sv/" target="_blank">Todos los derechos reservados.</a> 
                     </div>
                 </div>
             </div>
@@ -103,7 +105,7 @@
 
 
     <!-- Volver al Top -->
-    <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
+    <!--<a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>-->
 
 
     <!-- Librerias JavaScript -->
