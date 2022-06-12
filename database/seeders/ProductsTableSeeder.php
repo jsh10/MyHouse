@@ -16,6 +16,114 @@ class ProductsTableSeeder extends Seeder
     public function run()
     {
         Product::create([
+            'name' => 'Juego de Vasos',
+            'slug' => 'Juego de Vasos',
+            'details' => 'Vasos de vidrio Enfriado,12 piezas, Transparentes',
+            'price' => 23.99,
+            'shipping_cost' => 2.99,
+            'description' => 'Juego de Vasos',
+            'category_id' => 6,
+            'brand_id' => 6,
+            'image_path' => 'juegovasos.png'
+        ]);
+
+        Product::create([
+            'name' => 'Cuchillos Japoneses',
+            'slug' => 'Cuchillos Japoneses',
+            'details' => 'Acero inoxidable, 6 piezas, Negro',
+            'price' => 90.99,
+            'shipping_cost' => 12.99,
+            'description' => 'Cuchillos Japoneses',
+            'category_id' => 6,
+            'brand_id' => 6,
+            'image_path' => 'CuchilloJaponeses.jpg'
+        ]);
+
+        Product::create([
+            'name' => 'Platos de Ceramica',
+            'slug' => 'Platos de Ceramica',
+            'details' => 'Juego de vajilla, 18 piezas, aptos para microondas',
+            'price' => 84.99,
+            'shipping_cost' => 12.99,
+            'description' => 'Platos de Ceramica',
+            'category_id' => 6,
+            'brand_id' => 6,
+            'image_path' => 'platosdeceramica.jpeg'
+        ]);
+
+        Product::create([
+            'name' => 'Mesa de Madera',
+            'slug' => 'Mesa de Madera',
+            'details' => 'Mesa de comedor, madera de roble',
+            'price' => 35.99,
+            'shipping_cost' => 5.99,
+            'description' => 'Mesa de Madera',
+            'category_id' => 6,
+            'brand_id' => 6,
+            'image_path' => 'MesadeMadera.png'
+        ]);
+
+        Product::create([
+            'name' => 'Cocina Electrica Duxtop LCD',
+            'slug' => 'Cocina Electrica Duxtop LCD',
+            'details' => 'Dos quemadores, 1800 W, Sensor tactil estufa',
+            'price' => 200.99,
+            'shipping_cost' => 15.99,
+            'description' => 'Cocina Electrica Duxtop LCD',
+            'category_id' => 6,
+            'brand_id' => 6,
+            'image_path' => 'cocinaelectrica.jpg'
+        ]);
+
+        Product::create([
+            'name' => 'Silla de Madera',
+            'slug' => 'Silla de Madera',
+            'details' => 'Dos de Madera de Pino, listones en respando',
+            'price' => 99.99,
+            'shipping_cost' => 16.99,
+            'description' => 'Silla de Madera',
+            'category_id' => 7,
+            'brand_id' => 7,
+            'image_path' => 'silla.jpg'
+        ]);
+
+        Product::create([
+            'name' => 'Sofa Luxor',
+            'slug' => 'Sofa Luxor',
+            'details' => 'Sofa Moderno, diseño comodo',
+            'price' => 1099.99,
+            'shipping_cost' => 25.99,
+            'description' => 'Sofa Luxor',
+            'category_id' => 7,
+            'brand_id' => 7,
+            'image_path' => 'Sofa.jpg'
+        ]);
+
+        Product::create([
+            'name' => 'Lampara de Mesa',
+            'slug' => 'Lampara de Mesa',
+            'details' => 'Lampara minimalista, diseño moderno, beige',
+            'price' => 44.99,
+            'shipping_cost' => 8.99,
+            'description' => 'Lampara de Mesa',
+            'category_id' => 7,
+            'brand_id' => 7,
+            'image_path' => 'Linternademesa.jpg'
+        ]);
+
+        Product::create([
+            'name' => 'Gabetero de Madera',
+            'slug' => 'Gabetero de Madera',
+            'details' => 'diseño Moderno y minimalista, 4 gabetas, color madera',
+            'price' => 94.99,
+            'shipping_cost' => 12.99,
+            'description' => 'Gabetero de Madera',
+            'category_id' => 7,
+            'brand_id' => 7,
+            'image_path' => 'gabeterodemadera.jpg'
+        ]);
+
+        Product::create([
             'name' => 'MacBook Pro',
             'slug' => 'macbook-pro',
             'details' => '15 pulgadas, 1TB HDD, 32GB RAM',
@@ -212,6 +320,18 @@ class ProductsTableSeeder extends Seeder
             'category_id' => 8,
             'brand_id' => 7,
             'image_path' => 'hamaca.jpg'
+        ]);
+
+        Product::create([
+            'name' => 'Play Station 5',
+            'slug' => 'Play Station 5',
+            'details' => '2 controles, 4k-TV Gaming, 16GB GDDR6, 1TB SSD',
+            'price' => 449.99,
+            'shipping_cost' => 26.99,
+            'description' => 'Play Station 5',
+            'category_id' => 2,
+            'brand_id' => 5,
+            'image_path' => 'ps5.jpg'
         ]);
     }
 }
