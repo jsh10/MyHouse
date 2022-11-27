@@ -19,7 +19,7 @@
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
                             <h5 class="fw-bold text-primary text-uppercase mb-3 animated slideInDown">Los mejores productos del Hogar</h5>
-                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">La más alta calidad al mejor precio</h1>    
+                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">La más alta calidad al mejor precio</h1>
                         </div>
                     </div>
                 </div>
@@ -45,12 +45,15 @@
                     <h5 class="fw-bold text-primary text-uppercase">Sobre nosotros</h5>
                     <h1 class="mb-0">Nuestro compromiso contigo.</h1><br>
                     <div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
+                        <!--
+                        En "MyHouse" estamos dedicados a distribuir los mejores productos del mercado, siempre
+                            con el mejor precio y una gran atención para nuestros clientes.
+                        -->
                         <p class="mb-4 text-justify" style="margin-top:0px;">
-                            En "MyHouse" estamos dedicados a distribuir los mejores productos del mercado, siempre 
-                            con el mejor precio y una gran atención para nuestros clientes. Como empresa deseamos 
-                            que las familias salvadoreñas puedan tener un lugar en donde promocionar y obtener las 
-                            mejores ofertas del mercado, ya que el vínculo con nuestros clientes es muy importante 
-                            para nosotros, es por ello que como equipo nos comprometemos a ofrecerte: 
+                            Como empresa deseamos que las familias salvadoreñas puedan tener un lugar en donde
+                            promocionar y obtener las mejores ofertas del mercado, ya que el vínculo con nuestros
+                            clientes es muy importante para nosotros, es por ello que como equipo nos
+                            comprometemos a ofrecerte:
                         </p>
                     </div>
                     <div class="row g-0 mb-3">
@@ -75,9 +78,9 @@
         </div>
     </div>
 </div>
-<hr>
 
-<div class="container-fluid service position-relative px-5 py-5 mt-5 wow fadeInUp" style="margin-bottom: 135px;">
+
+<!--<div class="container-fluid service position-relative px-5 py-5 mt-5 wow fadeInUp" style="margin-bottom: 135px;">
     <div class="container">
         <div class="row g-5">
             <div class="col-lg-4 col-md-6">
@@ -106,7 +109,7 @@
             </div>
         </div>
     </div>
-</div>
+</div>-->
 <br>
 <div class="container-fluid bg-offer my-5 py-5 wow fadeInUp">
     <div class="container py-5">
@@ -137,7 +140,7 @@
         background-size: cover;
         z-index: -1;
     }
-    
+
     .bg-offer {
         background: linear-gradient(rgba(17, 57, 117, 0.7), rgba(18, 130, 145, 0.5)), url(../img/sala2.jpg) center center no-repeat;
         background-size: cover;

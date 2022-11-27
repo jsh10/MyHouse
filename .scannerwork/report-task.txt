@@ -1,0 +1,6 @@
+projectKey=MyHouse
+serverUrl=http://localhost:9000
+serverVersion=9.6.1.59531
+dashboardUrl=http://localhost:9000/dashboard?id=MyHouse
+ceTaskId=AYOXBPRuI3FJp-D5QWxC
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AYOXBPRuI3FJp-D5QWxC

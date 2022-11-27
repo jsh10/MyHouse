@@ -25,7 +25,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="mb-2"></h5>
-                            <h4 class="text-primary mb-0">+503 1234 6789</h4>
+                            <h4 class="text-primary mb-0">+503 7344-0004</h4>
                         </div>
                     </div>
                 </div>
@@ -47,7 +47,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="mb-2"></h5>
-                            <h4 class="text-primary mb-0">123 San Miguel, El Salvador</h4>
+                            <h4 class="text-primary mb-0">San Miguel, El Salvador</h4>
                         </div>
                     </div>
                 </div>
@@ -60,21 +60,21 @@
                             <div class="col-md-6">
                                 <label>Nombre completo:</label>
                                 <input type="text" class="form-control border-0 bg-light px-4" id="nombre" pattern="[a-zA-Z áéíóúÁÉÍÓÚ]{2,85}" onchange="toggleButton()"
-                                placeholder="mynombre" title="No se puede utilizar numeros o caracteres como #/*-+" style="height: 55px;">
+                                placeholder="Ejm: Ariadne Soto" title="No se puede utilizar numeros o caracteres como #/*-+" style="height: 55px;">
                             </div>
                             <div class="col-md-6">
                                 <label>Correo electronico:</label>
-                                <input type="email" class="form-control border-0 bg-light px-4" id="email" placeholder="myHouse@gmail.com" 
+                                <input type="email" class="form-control border-0 bg-light px-4" id="email" placeholder="myHouse@gmail.com"
                                 onchange="toggleButton()" style="height: 55px;">
                             </div>
                             <div class="col-12">
                             <label>Asunto del mensaje:</label>
-                                <input type="text" class="form-control border-0 bg-light px-4" id="asunto" pattern="[a-zA-Z áéíóúÁÉÍÓÚ1-9]{2,85}" 
+                                <input type="text" class="form-control border-0 bg-light px-4 text-center" id="asunto" pattern="[a-zA-Z áéíóúÁÉÍÓÚ1-9]{2,85}"
                                 placeholder="¡Me encanta MyHouse!" onchange="toggleButton()" style="height: 55px;">
                             </div>
                             <div class="col-12">
                                 <label>Mensaje:</label>
-                                <textarea class="form-control border-0 bg-light px-4 py-0" rows="4" id="mensaje" 
+                                <textarea class="form-control border-0 bg-light px-4 py-0" rows="4" id="mensaje"
                                    pattern="[a-zA-Z áéíóúÁÉÍÓÚ1-9]{2,255}" onchange="toggleButton()"></textarea>
                             </div>
                             <div class="col-12">
@@ -84,7 +84,7 @@
                     </form>
                 </div>
                 <div class="col-lg-6 wow slideInUp" data-wow-delay="0.6s">
-                    
+
                     <iframe class="position-relative rounded w-100 h-100"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3157.3557260336656!2d-88.19423708517243!3d13.488960090517944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f7b2a58d2095515%3A0xfb0914d1181e605f!2sUniversidad%20Gerardo%20Barrios!5e1!3m2!1ses!2ssv!4v1653614189918!5m2!1ses!2ssv"
                         frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
@@ -98,12 +98,12 @@
 
 <script>
     function toggleButton()
-        {            
+        {
             var nombre = document.getElementById('nombre').value;
             var correo = document.getElementById('email').value;
             var asunto = document.getElementById('asunto').value;
             var mensaje = document.getElementById('mensaje').value;
- 
+
             if (nombre && correo && asunto && mensaje) {
                 document.getElementById('checkButton').disabled = false;
             } else {

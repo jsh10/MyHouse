@@ -8,30 +8,38 @@
         </div>
     </div>
 </div>
-@endsection @section('content')
+@endsection
+
+@section('content')
 <div class="container" style="margin-top: 60px">
     @if(session()->has('success_msg'))
-    <div class="alert alert-success alert-dismissible fade show" role="alert">
-        {{ session()->get('success_msg') }}
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            {{ session()->get('success_msg') }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+    @endif
+
+    @if(session()->has('alert_msg'))
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            {{ session()->get('alert_msg') }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+    @endif
+
+    @if(count($errors) > 0)
+        @foreach($errors0>all() as $error)
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                {{ $error }}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                     <span aria-hidden="true">×</span>
                 </button>
-    </div>
-    @endif @if(session()->has('alert_msg'))
-    <div class="alert alert-warning alert-dismissible fade show" role="alert">
-        {{ session()->get('alert_msg') }}
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                </button>
-    </div>
-    @endif @if(count($errors) > 0) @foreach($errors0>all() as $error)
-    <div class="alert alert-success alert-dismissible fade show" role="alert">
-        {{ $error }}
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-    </div>
-    @endforeach @endif
+            </div>
+        @endforeach
+    @endif
 
     <div class="row justify-content-center">
         <div class="col-lg-7 card">
@@ -114,7 +122,7 @@
                         <div class="contenedor-inputs">
                             <input type="text" class="form-control" placeholder="Ingrese su nombre" name="nombre" id="nombre"
                               pattern="[a-zA-Z áéíóúÁÉÍÓÚ]{2,85}" onchange="toggleButton()"
-                              title="No se puede utilizar numeros o caracteres como #/*-+"> 
+                              title="No se puede utilizar numeros o caracteres como #/*-+">
                             <div class="row">
                                 <div class="col-md-6">
                                     <input type="email" class="form-control" placeholder="myHouse@gmail.com" name="correo" id="correo" onchange="toggleButton()">
@@ -138,13 +146,13 @@
     <br><br>
 </div>
 
-<script>        
+<script>
     function toggleButton()
-        {            
+        {
             var nombre = document.getElementById('nombre').value;
             var correo = document.getElementById('correo').value;
             var telefono = document.getElementById('telefono').value;
- 
+
             if (nombre && correo && telefono) {
                 document.getElementById('checkButton').disabled = false;
             } else {
