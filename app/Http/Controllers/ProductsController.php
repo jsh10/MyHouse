@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Product;
 use App\Models\Products;
 use Illuminate\Http\Request;
 use Validator;
@@ -127,9 +128,12 @@ class ProductsController extends Controller
      * @param  \App\Models\Products  $products
      * @return \Illuminate\Http\Response
     */
-    public function destroy(Products $products)
+    public function destroy($id)
     {
-       //
+       $product = Product::find($id);
+       $product->delete();
+
+       return redirect()->route('dashboard.index')->with('success', 'Item eliminado con exito');
     }
 
     public function upload(Request $request){

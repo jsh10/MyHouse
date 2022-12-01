@@ -20,7 +20,9 @@
 
 
                 </div>
-                <form action="#"><br>
+                <form action="{{ route('dashboard.destroy', $item->id)}}" method="POST"><br>
+                    @csrf
+                    @method('delete')
                     <div class="row">
                         <div class="col-md-6">
                             <button class="btn btn-danger w-100">Eliminar</button>

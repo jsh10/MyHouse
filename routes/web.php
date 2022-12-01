@@ -47,16 +47,14 @@ Route::get('/envio2', function(){
     return view('envio2');
 });
 
+
 //Route::view('dashboard', 'dashboard')->middleware('auth');
 
-
 Route::get('/login' , function(){return view('login');})->name('login')->middleware('guest');
-
 
 Route::post('/login', [LoginController::class, 'login']);
 
 Route::post('/logout', [LoginController::class, 'logout']);
-
 
 Route::get('/register' , function(){
     return view('cuenta/registro');
@@ -67,6 +65,7 @@ Route::get('/pantalla' , function(){
 });
 
 Route::post('/reiniciar', [CartController::class, 'reiniciar'])->name('reiniciar');
+
 
 /* PDF */
 
@@ -82,6 +81,8 @@ Route::get('/edit/{id}', [ProductsController::class, 'edit'])->name('dashboard.e
 Route::put('/update/{id}', [ProductsController::class, 'update'])->name('dashboard.update')->middleware('auth');
 
 Route::get('/show', [ProductsController::class, 'show'])->name('dashboard.show')->middleware('auth');
+Route::delete('/destroy/{id}', [ProductsController::class, 'destroy'])->name('dashboard.destroy')->middleware('auth');
+
 
 /**
  * Filtrado por categoria
@@ -94,6 +95,10 @@ Route::get('/hogar', [CartController::class, 'hogar'])->name('hogar');
 Route::get('/utensilios', [CartController::class, 'utensilios'])->name('utensilios');
 Route::get('/artesanal', [CartController::class, 'artesanal'])->name('artesanl');
 
+
+/**
+ * Subir fotos de referencia para los productos
+ */
 route::get('/upload', function(){
     return view('upload');
 })->middleware('auth');
