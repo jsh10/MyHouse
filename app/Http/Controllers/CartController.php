@@ -23,6 +23,42 @@ class CartController extends Controller
 
 
     /**
+     * Funciones de filtrado de productos por categoria segun ID
+     *  @return datos a la vista */
+
+    public function tecnologia(){
+        $products = Product::from('products')->where('category_id', '=', 1)->get();
+        return view('/categorias/tecnologia')->with(['products' => $products]);
+    }
+
+    public function muebles(){
+        $products = Product::from('products')->where('category_id', '=', 2)->get();
+        return view('/categorias/muebles')->with(['products' => $products]);
+    }
+
+    public function electrodomesticos(){
+        $products = Product::from('products')->where('category_id', '=', 3)->get();
+        return view('/categorias/electrodomesticos')->with(['products' => $products]);
+    }
+
+    public function hogar(){
+        $products = Product::from('products')->where('category_id', '=', 4)->get();
+        return view('/categorias/hogar')->with(['products' => $products]);
+    }
+
+    public function utensilios(){
+        $products = Product::from('products')->where('category_id', '=', 5)->get();
+        return view('/categorias/utensilios')->with(['products' => $products]);
+    }
+
+    public function artesanal(){
+        $products = Product::from('products')->where('category_id', '=', 6)->get();
+        return view('/categorias/artesanal')->with(['products' => $products]);
+    }
+
+
+
+    /**
      * Función para convertir una vista HTML a formato PDF.
      *
      * @return Genera una factura PDF descargable.

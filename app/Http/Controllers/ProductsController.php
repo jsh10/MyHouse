@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Models\Products;
 use Illuminate\Http\Request;
+use Validator;
+
+use Illuminate\Support\Str;
 
 class ProductsController extends Controller
 {
@@ -127,5 +130,14 @@ class ProductsController extends Controller
     public function destroy(Products $products)
     {
        //
+    }
+
+    public function upload(Request $request){
+        $path = '';
+        $original_name = $request->file('file')->getClientOriginalName();
+        $final_name = Str::slug($request->file('file')->getClientOriginalName().'_'.time()).'.'.trim($request->file('file')->getClientOriginalExtension());
+        $request->file->storeAs($path, $original_name, 'uploads');
+
+        return redirect(url('dashboard'));
     }
 }

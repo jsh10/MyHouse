@@ -82,3 +82,20 @@ Route::get('/edit/{id}', [ProductsController::class, 'edit'])->name('dashboard.e
 Route::put('/update/{id}', [ProductsController::class, 'update'])->name('dashboard.update')->middleware('auth');
 
 Route::get('/show', [ProductsController::class, 'show'])->name('dashboard.show')->middleware('auth');
+
+/**
+ * Filtrado por categoria
+*/
+
+Route::get('/tecnologia', [CartController::class, 'tecnologia'])->name('tecnologia');
+Route::get('/muebles', [CartController::class, 'muebles'])->name('muebles');
+Route::get('/electrodomesticos', [CartController::class, 'electrodomesticos'])->name('electodomesticos');
+Route::get('/hogar', [CartController::class, 'hogar'])->name('hogar');
+Route::get('/utensilios', [CartController::class, 'utensilios'])->name('utensilios');
+Route::get('/artesanal', [CartController::class, 'artesanal'])->name('artesanl');
+
+route::get('/upload', function(){
+    return view('upload');
+})->middleware('auth');
+
+Route::post('/upload', [ProductsController::class, 'upload'])->name('dashboard.upload')->middleware('auth');

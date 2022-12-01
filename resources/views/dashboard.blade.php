@@ -20,13 +20,16 @@
 
             <div class="card-body">
                 <div class="row">
-                    <div class="col-md-9">
+                    <div class="col-md-8">
                         <h5 class="card-title">
                             Listado de productos
                         </h5>
                     </div>
                     <div class="col-md-1">
                         <a href="{{route('dashboard.create')}}" class="btn btn-primary text-white">Agregar</a>
+                    </div>
+                    <div class="col-md-1">
+                        <a href="{{route('dashboard.upload')}}" class="btn btn-primary text-white">Imagen</a>
                     </div>
                     <div class="col-md-2">
                         <form action="/logout" method="POST" style="display: inline;">
