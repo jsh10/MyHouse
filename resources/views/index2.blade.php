@@ -27,13 +27,11 @@
 <br>
 </thead>
 
-
 <div class="datagrid"><table>
 <thead>
     <tr>
         <th>Detalle de pago</th>
     </tr>
-    <br>
 </thead>
 
 <div class="datagrid"><table>
@@ -41,10 +39,11 @@
     <tr>
         <th>Productos</th>
         <th>Cantidad</th>
-        <th>Precio</th>
+        <th>Precio  </th>
         <th>Sub-Total</th>
     </tr>
 </thead>
+
 
 <tbody>
   @foreach(\Cart::getContent() as $item)
